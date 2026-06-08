@@ -1,0 +1,21 @@
+appId: com.studytimer.app
+productName: 学习计时器
+directories:
+  buildResources: resources
+  output: dist
+files:
+  - out/**/*
+mac:
+  category: public.app-category.productivity
+  target:
+    - dmg
+    - zip
+win:
+  target:
+    - nsis
+nsis:
+  oneClick: false
+  allowToChangeInstallationDirectory: true
+linux:
+  target:
+    - AppImage
